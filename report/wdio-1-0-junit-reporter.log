@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Watches Page" timestamp="2021-10-29T10:25:19" time="2.629" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Watches Page"/>
+      <property name="capabilities" value="firefox.93_0.windows"/>
+      <property name="file" value=".\test\specs\watches.js"/>
+    </properties>
+    <testcase classname="firefox.93_0.windows.Watches_Page" name="should open url verify the title" time="2.61">
+      <system-out><![CDATA[
+COMMAND: POST /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/url - {"url":"https://by.ebay.com/"}
+RESULT: {"url":"https://by.ebay.com/"}
+COMMAND: POST /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/elements - {"using":"css selector","value":"h2.hl-card-header__headline"}
+RESULT: {"using":"css selector","value":"h2.hl-card-header__headline"}
+COMMAND: GET /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/element/9756272f-d447-44fa-9b49-ddcf870f907d/text - {}
+RESULT: {}
+COMMAND: POST /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/elements - {"using":"css selector","value":"section[id=\"s0-16-13_2-0-1[0]-0-0\"] ul li"}
+RESULT: {"using":"css selector","value":"section[id=\"s0-16-13_2-0-1[0]-0-0\"] ul li"}
+COMMAND: POST /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/elements - {"using":"css selector","value":".hl-cat-nav__js-tab a[href*=\"Fashion\"]"}
+RESULT: {"using":"css selector","value":".hl-cat-nav__js-tab a[href*=\"Fashion\"]"}
+COMMAND: GET /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/element/c5592e25-ccf9-4ba4-a673-af9ef8ee363c/rect - {}
+RESULT: {}
+COMMAND: POST /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/execute/sync - {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
+RESULT: {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
+COMMAND: POST /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/actions - {"actions":[{"type":"pointer","id":"finger1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","duration":0,"x":345,"y":126}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"finger1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","duration":0,"x":345,"y":126}]}]}
+COMMAND: DELETE /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/actions - {}
+RESULT: {}
+COMMAND: POST /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/element - {"using":"css selector","value":".hl-cat-nav__sub-cat-col a[href*=\"Wristwatches\"]"}
+COMMAND: DELETE /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85 - {}
+RESULT: {"using":"css selector","value":".hl-cat-nav__sub-cat-col a[href*=\"Wristwatches\"]"}
+COMMAND: POST /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/element/af5149e2-bbec-46e1-9935-8c987e6a7d2d/click - {}
+COMMAND: GET /session/a0113598-c693-49ec-b27e-b0e5f8b5ca85/element/af5149e2-bbec-46e1-9935-8c987e6a7d2d/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

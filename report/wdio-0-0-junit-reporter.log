@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Watches Page" timestamp="2021-10-29T10:25:16" time="2.717" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Watches Page"/>
+      <property name="capabilities" value="chrome.95_0_4638_54.windows"/>
+      <property name="file" value=".\test\specs\watches.js"/>
+    </properties>
+    <testcase classname="chrome.95_0_4638_54.windows.Watches_Page" name="should open url verify the title" time="2.696">
+      <system-out><![CDATA[
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/url - {"url":"https://by.ebay.com/"}
+RESULT: {"url":"https://by.ebay.com/"}
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/elements - {"using":"css selector","value":"h2.hl-card-header__headline"}
+RESULT: {"using":"css selector","value":"h2.hl-card-header__headline"}
+COMMAND: GET /session/b6eb60b99e144447b8a5cee71950969a/element/7a3a7ea4-71b7-48fa-8a9f-d4cc622522ea/text - {}
+RESULT: {}
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/elements - {"using":"css selector","value":"section[id=\"s0-16-13_2-0-1[0]-0-0\"] ul li"}
+RESULT: {"using":"css selector","value":"section[id=\"s0-16-13_2-0-1[0]-0-0\"] ul li"}
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/elements - {"using":"css selector","value":".hl-cat-nav__js-tab a[href*=\"Fashion\"]"}
+RESULT: {"using":"css selector","value":".hl-cat-nav__js-tab a[href*=\"Fashion\"]"}
+COMMAND: GET /session/b6eb60b99e144447b8a5cee71950969a/element/62a45d7c-2d7f-4257-ad5e-bcdec1ecc25f/rect - {}
+RESULT: {}
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/execute/sync - {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
+RESULT: {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/actions - {"actions":[{"type":"pointer","id":"finger1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","duration":0,"x":344,"y":126}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"finger1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","duration":0,"x":344,"y":126}]}]}
+COMMAND: DELETE /session/b6eb60b99e144447b8a5cee71950969a/actions - {}
+RESULT: {}
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/element - {"using":"css selector","value":".hl-cat-nav__sub-cat-col a[href*=\"Wristwatches\"]"}
+COMMAND: DELETE /session/b6eb60b99e144447b8a5cee71950969a - {}
+RESULT: {"using":"css selector","value":".hl-cat-nav__sub-cat-col a[href*=\"Wristwatches\"]"}
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/element/8cb60318-468d-4049-ae9f-43f7324ff125/click - {}
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8cb60318-468d-4049-ae9f-43f7324ff125","ELEMENT":"8cb60318-468d-4049-ae9f-43f7324ff125"}]}
+COMMAND: POST /session/b6eb60b99e144447b8a5cee71950969a/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8cb60318-468d-4049-ae9f-43f7324ff125","ELEMENT":"8cb60318-468d-4049-ae9f-43f7324ff125"}]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
